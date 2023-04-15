@@ -39,11 +39,17 @@ Data wrangling :
     Drop columns that has missing value (there's only few of them, like 0.01%) 
 9. Create new columns
     time_diff_prep => how many days does it takes for seller to prepare the ordered product until handing it over to 3PL (third party logistic)
+    
     time_diff => how many days does it takes for 3PL to sent the ordered product to customer (actual)
+    
     time_diff_sla => how many days does it takes for 3PL to sent the ordered product to customer (expected estimation)
+    
     SLA_diff_days => how many difference days between actual and expected delivery
+    
     over_SLA => check if actual delivery time is longer than expected delivery time
+    
     route => define whether delivery route is intercity (different city) or intracity (same city) 
+    
 10. Handling missing values & inconsistent value in product name columns
     There's three inconsistent product name that need to be replaced.
     There's 1559 values (around 1.4%) with nan value that need to be filled as "unknown"
@@ -53,22 +59,26 @@ Data wrangling :
 Visualizations :
 1. How is the overall order transaction over 2016 to 2018 ?
 I create line chart to show overall transaction orders on the dataset
+
 ![image](https://user-images.githubusercontent.com/125140421/232182975-749ecb65-ca61-4271-87d3-e9c739be047e.png)
 
 It looks there’s a decline number of orders on December 2017 but it’s quicklt bounced back. Overall Olist is showing a consistent growth.
 
 2. How is the distribution orders based on route type on origin & destination city?
 I create pie chart to show route type distribution
+
 ![image](https://user-images.githubusercontent.com/125140421/232183027-8d0bd096-b155-47a9-a344-674d92084393.png)
 
 It turns out most of Olist orders comes from intercity route.
 
 Breakdown to see top origin city 
+
 ![image](https://user-images.githubusercontent.com/125140421/232183071-9ef06407-1382-4913-81e1-3bde8347925f.png)
 
 There’s huge gap between Sao Paulo and Ibitinga. Other than Sao Paulo, intracity orders on other city is quite small.
 
 Breakdown to see top destination city 
+
 ![image](https://user-images.githubusercontent.com/125140421/232183085-efc29737-5f7b-4052-be28-69e2ad96c183.png)
 
 We can see that the top destination city is still Sao Paulo. This means the most active customers and sellers is in Sao Paulo.
@@ -80,6 +90,7 @@ It’s like a contract that sets the rules for shipping goods to the customer,
 like how long does it takes to get your goods and what kind of condition they should be in when they arrive.
 
 I create pie chart to show over SLA distribution
+
 ![image](https://user-images.githubusercontent.com/125140421/232183127-e519f288-30bf-4c1c-9404-b1fe51def921.png)
 
 Olist’s logistic partner performance delivery time is really good! There’s only 7.4 % from overall orders that’s over SLA.
@@ -89,18 +100,22 @@ We’ll focus on orders that are over SLA. Let’s see how many days it takes fo
 ![image](https://user-images.githubusercontent.com/125140421/232183138-df67b43f-9106-4b93-aa9f-224ba39389d9.png)
 
 Here’s SLA difference days that contributes 70% of over SLA orders.
+
 ![image](https://user-images.githubusercontent.com/125140421/232183154-c24752d9-1c56-4107-8a76-04adb693ba98.png)
 
 Let’s see which route that has the most over SLA orders on overall dataset
+
 ![image](https://user-images.githubusercontent.com/125140421/232183159-a085c012-ef34-407f-9b12-e3390ce90e62.png)
 
 Surprisingly, the most over SLA orders comes from route Sao Paulo to Sao Paulo. 
 Even if the over SLA orders on that route only contributes 6 %, it is still a little weird because it’s an intracity route.
 
 Let’s take a closer look at intracity route: Sao Paulo
+
 ![image](https://user-images.githubusercontent.com/125140421/232183171-c87a34fb-80ce-4b9a-9842-8a440845f930.png)
 
-It looks like only around 3% of deliveries on this route are running behind schedule (aka over SLA), which isn’t too bad. 
+It looks like only around 3% of deliveries on this route are running behind schedule (aka over SLA), which isn’t too bad.
+
 However, the number late of days can vary quite a bit, so it’s hard to pinpoint the exact cause of the delays. 
 It’s possible that there are some issues on the logistic partner’s side of things. 
 Olist need to look into it further to figure out what’s going on.
