@@ -1,4 +1,4 @@
-# DataWrangling
+# Data Wrangling - E-commerce Olist
 Project for Pacmann School of Data 
 The dataset has information of 100k orders from 2016 to 2018 made at multiple marketplaces Olist e-commerce platform. 
 It has information about: order status, price, payment and freight performance to customer location, product attributes and finally reviews written by customers.
