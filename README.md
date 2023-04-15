@@ -74,6 +74,7 @@ Breakdown to see top destination city
 We can see that the top destination city is still Sao Paulo. This means the most active customers and sellers is in Sao Paulo.
 
 3. How is the delivery time performance from the logistic partner?
+
 When e-commerce companies collaborate with another logistics company, they usually make a Service Level Agreement (SLA). 
 It’s like a contract that sets the rules for shipping goods to the customer, 
 like how long does it takes to get your goods and what kind of condition they should be in when they arrive.
