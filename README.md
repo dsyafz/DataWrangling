@@ -54,19 +54,23 @@ Visualizations :
 1. How is the overall order transaction over 2016 to 2018 ?
 I create line chart to show overall transaction orders on the dataset
 ![image](https://user-images.githubusercontent.com/125140421/232182975-749ecb65-ca61-4271-87d3-e9c739be047e.png)
+
 It looks there’s a decline number of orders on December 2017 but it’s quicklt bounced back. Overall Olist is showing a consistent growth.
 
 2. How is the distribution orders based on route type on origin & destination city?
 I create pie chart to show route type distribution
 ![image](https://user-images.githubusercontent.com/125140421/232183027-8d0bd096-b155-47a9-a344-674d92084393.png)
+
 It turns out most of Olist orders comes from intercity route.
 
 Breakdown to see top origin city 
 ![image](https://user-images.githubusercontent.com/125140421/232183071-9ef06407-1382-4913-81e1-3bde8347925f.png)
+
 There’s huge gap between Sao Paulo and Ibitinga. Other than Sao Paulo, intracity orders on other city is quite small.
 
 Breakdown to see top destination city 
 ![image](https://user-images.githubusercontent.com/125140421/232183085-efc29737-5f7b-4052-be28-69e2ad96c183.png)
+
 We can see that the top destination city is still Sao Paulo. This means the most active customers and sellers is in Sao Paulo.
 
 3. How is the delivery time performance from the logistic partner?
@@ -76,9 +80,11 @@ like how long does it takes to get your goods and what kind of condition they sh
 
 I create pie chart to show over SLA distribution
 ![image](https://user-images.githubusercontent.com/125140421/232183127-e519f288-30bf-4c1c-9404-b1fe51def921.png)
+
 Olist’s logistic partner performance delivery time is really good! There’s only 7.4 % from overall orders that’s over SLA.
 
 We’ll focus on orders that are over SLA. Let’s see how many days it takes for most of these deliveries to be completed.
+
 ![image](https://user-images.githubusercontent.com/125140421/232183138-df67b43f-9106-4b93-aa9f-224ba39389d9.png)
 
 Here’s SLA difference days that contributes 70% of over SLA orders.
